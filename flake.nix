@@ -1,5 +1,8 @@
 {
-  description = "A very basic flake";
+  # WARNING this is mainly for testing if it will work in nix
+  # depending on which part of hyprland is used, it may be necessary to add
+  # the dependencies of Hyprland here as well
+  description = "Hyprland notification plugin";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
@@ -21,7 +24,6 @@
           mkdir -p $out/usr/lib/hyprland-plugins
           cp hypr-notify.so $out/usr/lib/hyprland-plugins
         '';
-        # buildInputs = with pkgs; [ gnumake ];
       };
 
       packages.x86_64-linux.default = self.packages.x86_64-linux.hypr-notify;
