@@ -1,3 +1,7 @@
+# Notice
+
+`hyprctl notify` is now builtin, the plugin is deprecated. You can still use the statnot config as a notification daemon though. You'll need to modify the file a bit, figure it out yourself :P (and make a PR if you do)
+
 # Hypr-notify
 
 Test hyprland plugin that exposes the `notify` dispatcher
